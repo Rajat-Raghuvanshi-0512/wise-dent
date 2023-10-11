@@ -8,7 +8,7 @@ const FooterSm = () => {
     <div className="md:hidden">
       <div className="flex justify-between items-center">
         <h2 className="uppercase text-5xl text-center font-extrabold font-futura">
-          TM
+          WD
         </h2>
         <div className="flex gap-3">
           <Link href="https://www.instagram.com" target="_blank">
@@ -51,11 +51,11 @@ const FooterSm = () => {
       </div>
       <div className="flex gap-1 justify-between my-5">
         <div>
-          2/183 porter road
+          SK- 197,
           <br />
-          Heidelberg heights
+          Near Gate No-1 ,
           <br />
-          Vic - 3081
+          SEC – 116, NOIDA
         </div>
         <div>
           <p>wisedent1@gmail.com</p>

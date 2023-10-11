@@ -9,26 +9,19 @@ import Button from './custom/Button';
 const NavModal = forwardRef(({ isOpen, setIsOpen, openModal }, ref) => {
   return (
     <div
-      className={`fixed duration-500 top-0 left-0 h-[65svh] bg-[#324A23] w-full text-white px-5 py-2 ${
+      className={`fixed duration-500 top-0 left-0 h-[65svh] bg-[#036C66] w-full text-white px-5 py-2 ${
         isOpen ? 'opacity-100' : 'opacity-0 invisible -z-50'
       }`}
       ref={ref}
     >
-      <div className="flex justify-between">
-        <Image
-          src={'/logo-white.webp'}
-          alt="logo"
-          height={55}
-          width={100}
-          className="w-[80px] object-contain md:w-[70px] lg:w-[100px]"
-          unoptimized
-        />
+      <div className="flex justify-between items-center py-3">
+        <div className="font-futura text-3xl uppercase">Wisedent</div>
         <Image
           src={'/cross.svg'}
           alt="cross"
           width={40}
           height={40}
-          className="mt-4 cursor-pointer"
+          className=" cursor-pointer"
           onClick={() => setIsOpen(false)}
         />
       </div>
@@ -151,25 +144,14 @@ const Navbar = ({ openModal }) => {
         />
       </div>
       <div className="flex md:invisible items-center">
-        {isScrolled ? (
-          <Image
-            src={'/logo.webp'}
-            alt="logo"
-            height={55}
-            width={100}
-            className="w-[80px] object-contain md:w-[70px] lg:w-[70px]"
-            unoptimized
-          />
-        ) : (
-          <Image
-            src={'/logo-white.webp'}
-            alt="logo"
-            height={55}
-            width={100}
-            className="w-[80px] object-contain md:w-[70px] lg:w-[100px]"
-            unoptimized
-          />
-        )}
+        <Image
+          src={'/logo.webp'}
+          alt="logo"
+          height={55}
+          width={100}
+          className="w-[40px] object-contain md:w-[70px] lg:w-[70px]"
+          unoptimized
+        />
       </div>
       <div className="flex gap-5 md:hidden">
         <div className="flex items-center gap-2 bg-green-base px-2 rounded-md">
