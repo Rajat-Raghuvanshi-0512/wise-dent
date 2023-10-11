@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #036c66;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #024541;
+}
+
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-extralight.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Bold';
+  src: url('/fonts/Futura Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-normal.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-medium.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-Bold.otf') format('opentype');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/AcidGrotesk-Bold.otf') format('opentype');
+  font-weight: 900;
+  font-display: swap;
+}
+* {
+  font-family: 'acid Grotesk';
+  scroll-behavior: smooth;
+}
+
+.review-box::-webkit-scrollbar {
+  display: none;
+}
+
+.loader-animation {
+  animation: loader linear forwards 1.5s;
+}
+.active {
+  max-height: 100rem !important;
+  transition: max-height 0.25s ease-in !important;
+}
+
+.animate-infinite {
+  width: 900vw;
+}
+@keyframes rotateInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150vw));
+  }
+}
+
+.animate-infinite-1 {
+  width: 1200vw;
+}
+@keyframes rotateInfinite1 {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(calc(-210vw));
+  }
+}
+
+.animate-infinite-2 {
+  width: 940vw;
+}
+@keyframes rotateInfinite2 {
+  0% {
+    transform: translateX(-120vw);
+  }
+  100% {
+    transform: translateX(calc(0vw));
+  }
+}
+
+@keyframes loader {
+  from {
+    translate: 0px;
+  }
+  to {
+    translate: 200px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input,
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+    width: 0px !important;
+    height: 0px !important;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-appearance: none;
+    display: none;
+    width: 0px !important;
+    height: 0px !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    -webkit-appearance: none;
+    display: none;
+    width: 0px !important;
+    height: 0px !important;
+    background-color: transparent;
+  }
+}
