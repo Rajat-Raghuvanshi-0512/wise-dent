@@ -3,8 +3,8 @@ export const galleryInfo = [
     id: 1,
     link1: '/gallery/img1.webp',
     link2: '/gallery/img2.webp',
-    heading1: 'Lawn Care',
-    heading2: 'Garden Design',
+    heading1: 'Dentures',
+    heading2: 'Implants',
     desc1:
       'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
     desc2: 'Turn Your Patch Of Green Into A Work Of Art',
@@ -27,8 +27,8 @@ export const galleryInfo = [
     id: 2,
     link1: '/gallery/img3.webp',
     link2: '/gallery/img4.webp',
-    heading1: 'Weed Control',
-    heading2: 'Planting, Grassing & Bedding',
+    heading1: 'Orthodontics',
+    heading2: 'Endodontics',
     desc1:
       'Not sure what has your grass struggling? We can identify and handle it with the right product for you.',
     desc2:
@@ -41,9 +41,9 @@ export const galleryInfo = [
   {
     id: 3,
     link1: '/gallery/img5.webp',
-    link2: '/gallery/img1.webp',
-    heading1: 'Seasonal Cleanup',
-    heading2: 'Hedge & Tree Care',
+    link2: '/gallery/img6.webp',
+    heading1: 'Surgery',
+    heading2: 'Crown & Bridges',
     desc1:
       'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
     desc2: 'Turn Your Patch Of Green Into A Work Of Art',
@@ -62,9 +62,9 @@ export const galleryInfo = [
     link1: '/gallery/img7.webp',
     link2: '/gallery/img8.webp',
     link3: '/gallery/img9.webp',
-    heading1: 'Consultation & Maintenance',
-    heading2: 'Pest Management',
-    heading3: 'Waste removal services',
+    heading1: 'Pediatric/Children Treatment',
+    heading2: 'Periodontic Gum Treatment',
+    heading3: 'Cosmetic',
     desc1:
       'Keep your garden blooming all year long with our Professional Lawn Care and Gardening services.',
     desc2:
@@ -150,13 +150,13 @@ export const cities = {
 
 export const pricePageData = {
   Experience:
-    "We're a trusted family-owned business dedicated to nurturing Melbourne's outdoor spaces. With generations of expertise, we're committed to top-notch service and reliability",
+    "We Understand Every Smile Is Unique, and We're Here to Tailor Your Dental Care to Your Needs.",
 
   Reliability:
-    'We understand each participants needs are different and will work with you to provide the gardening you require.',
+    "We Understand Every Smile Is Unique, and We're Here to Tailor Your Dental Care to Your Needs.",
 
   Quality:
-    'We take pride in our cobber like approach to garden care, treating each garden as a unique canvas that deserves nothing but the best.',
+    "We Understand Every Smile Is Unique, and We're Here to Tailor Your Dental Care to Your Needs.",
   img1: '/price.webp',
   img2: '/price1.webp',
   img3: '/price2.webp',

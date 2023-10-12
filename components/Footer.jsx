@@ -88,7 +88,7 @@ const FooterSm = () => {
             Wise dent
           </h2>
           <p className="w-40 text-xs font-light">
-            © 2023 Copyright Timmy’s gardening and Mowing{' '}
+            © 2023 Copyright Wisedent{' '}
             <a
               href="https://pixysquare.com"
               target="_blank"

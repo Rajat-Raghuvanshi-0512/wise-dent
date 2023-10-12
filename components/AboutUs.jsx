@@ -27,41 +27,24 @@ const AboutUs = ({ openModal }) => {
         <div className="flex-[0.6] md:flex-[1.2] relative">
           <div className="bg-green-base h-16 md:h-36 w-[3.3px] md:w-[5.3px] absolute top-2 -left-2 md:-left-4"></div>
           <h3 className="text-2xl md:text-3xl leading-[1.15] font-bold lg:text-5xl md:w-[70%]">
-            We&apos;re passionate cultivators of green beauty.
+            We&apos;re Dedicated Craftsmen of Radiant Smiles.
           </h3>
           <p className="py-5 text-xs md:text-lg lg:text-xl hidden md:block">
-            At Timmy&apos;s Mowing, we understand that your lawn is more than
-            just grass. it&apos;s a space for relaxation, family playtime,
-            entertainment, and the forging of enduring memories. Our philosophy
-            revolves around delivering the utmost care to every lawn, and
-            that&apos;s precisely what we offer
+            Wisedent takes pride in being Best Dental Clinic in Noida for Braces
+            and Implant. Our team includes the best Endodontist, Periodontist,
+            Prosthodontist and Kid’s Dentist, who follow strict standards to
+            deliver exceptional service and personalised dental care.
           </p>
           <div className=" ml-6 md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 text-green-base md:flex items-center font-semibold lg:text-xl gap-5 leading-5">
             <div className="flex gap-3 items-center text-xs md:text-xl">
-              <Image
-                src={'/trees.webp'}
-                alt="tree"
-                width={45}
-                height={85}
-                className="w-[20px] lg:w-[45px] object-contain"
-              />
-              <p>
-                Best gardening <br /> services
-              </p>
+              <p>Advanced Dentistry</p>
             </div>
             <div className="w-[2px] bg-black h-16 hidden md:block"></div>
-            <div className="flex gap-3 text-xs md:text-xl mt-3">
-              <Image
-                src={'/trees.webp'}
-                alt="tree"
-                width={25}
-                height={85}
-                className="w-[15px] lg:w-[25px] object-contain"
-              />
+            <div className="flex gap-3 text-xs md:text-xl">
               <p>
-                With 5+ years of <br /> expertise{' '}
+                With Over 15 Years of Dedication
                 <span className="hidden md:inline">
-                  in lawn care <br /> and gardening,
+                  to Perfecting Your Dental Wellness.
                 </span>
               </p>
             </div>

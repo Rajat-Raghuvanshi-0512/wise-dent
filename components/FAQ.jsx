@@ -14,7 +14,7 @@ const GeneralFaqData = [
     body: 'This will depend on a number of factors, including the size of your garden and how much time you have to devote to it yourself. If you have a large garden, it’s probably best to have it serviced on a weekly basis. For smaller gardens, fortnightly or monthly services may be sufficient.',
   },
   {
-    heading: 'How can I get an appointment for your lawn mowing services?',
+    heading: 'How can I get a quote for your lawn mowing services?',
     body: "Getting a quote is simple! You can reach out to us via phone or our website's contact form. We'll gather the necessary information about your lawn size and requirements to provide you with an accurate estimate.",
   },
   {
@@ -138,7 +138,7 @@ const FAQ = ({ openModal }) => {
 
           <div className="w-full h-[2px] bg-green-base hidden md:block" />
           <Button
-            className="text-base mt-0 md:w-full hidden md:block"
+            className="text-base mt-0 md:w-full hidden md:block !px-0"
             onClick={openModal}
           >
             get an appointment
@@ -156,7 +156,7 @@ const FAQ = ({ openModal }) => {
           ))}
         </div>
       </div>
-      <div className="px-5">
+      <div className="px-5 mb-5">
         <Button
           className="text-base mt-0 md:hidden w-full py-3"
           onClick={openModal}

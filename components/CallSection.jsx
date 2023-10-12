@@ -37,8 +37,8 @@ const CallSection = ({ setShowThankyou }) => {
         height={100}
         className="w-full h-full absolute top-0 left-0 md:object-cover"
       />
-      <h3 className="text-2xl md:text-4xl lg:text-5xl !leading-snug text-center md:text-left font-semibold md:w-[60%]">
-        Let us cultivate beauty right at your doorstep.
+      <h3 className="text-2xl md:text-4xl lg:text-5xl !leading-snug text-center md:text-left font-bold md:w-[70%]">
+        Crafting Healthy, Beautiful Smiles Right Here in Your Neighborhood.
       </h3>
       <form
         onSubmit={handleSubmit}

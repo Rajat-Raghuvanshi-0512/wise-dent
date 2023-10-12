@@ -207,7 +207,7 @@ const Navbar = ({ openModal }) => {
           get an appointment
         </button>
       </div>
-      <div className="hidden md:flex gap-3">
+      <div className="hidden md:flex items-center gap-3">
         <Image
           src={'/call.webp'}
           className="object-contain w-[20px] lg:w-[35px]"

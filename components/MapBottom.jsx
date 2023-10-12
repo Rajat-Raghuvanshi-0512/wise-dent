@@ -10,35 +10,30 @@ const MapForm = ({ setShowThankyou }) => {
           <Form
             className="min-w-[460px]"
             setShowThankyou={setShowThankyou}
-            bgImg={'/thankyou-bg.webp'}
-            title="MELBOURNE LAWN CARE AND GARDENING SPECIALISTS"
-            desc="Let us create your Stunning Garden."
+            bgImg={'/form-bg.webp'}
+            title="Let us Craft Your Stunning Smile."
+            desc="Let us Craft Your Stunning Smile."
+            btnText="get a free appointment"
           />
         </div>
         <div className="md:flex-[1.3]">
-          <Image
-            src={'/map-bottom.webp'}
-            alt="map"
-            width={100}
-            height={100}
-            className="w-full object-contain object-top hidden md:block"
-            unoptimized
-          />
-          <div className="flex flex-col items-end text-right md:p-5 text-sm md:text-2xl lg:text-3xl gap-10 text-white md:text-green-base mt-5 md:mt-0">
+          <div className="flex flex-col items-end md:mt-20 lg:mt-32 text-right md:p-5 text-sm md:text-2xl lg:text-3xl gap-10 text-white md:text-green-base mt-5">
             <p>
-              SECOND SERVICE <strong>FREE</strong>
+              SMILE BRIGHTER WITH{' '}
+              <strong className="block">OUR SERVICES</strong>
             </p>
             <p>
-              NO CALL OUT <strong>FEES</strong>
+              NO CALL OUT <strong className="block">FEES</strong>
             </p>
             <p>
-              100% SATISFACTION <br /> <strong>GUARANTEE</strong>
+              100% SATISFACTION <br />{' '}
+              <strong className="block">GUARANTEE</strong>
             </p>
           </div>
         </div>
       </div>
       <Button className="w-full bg-white py-3 !text-green-base md:hidden">
-        get an appointment
+        get a free appointment
       </Button>
     </section>
   );

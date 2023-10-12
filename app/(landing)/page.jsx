@@ -133,7 +133,7 @@ const Home = () => {
       />
       <main className="2xl:px-32">
         <Hero setShowThankyou={setShowThankyou} />
-        {/* <ImageGallery />
+        <ImageGallery />
         <CallSection setShowThankyou={setShowThankyou} />
         <AboutUs openModal={openModal} />
         <PricePage openModal={openModal} />
@@ -145,7 +145,7 @@ const Home = () => {
         <div className="hidden md:block">
           <MapForm setShowThankyou={setShowThankyou} />
         </div>
-        <LastForm setShowThankyou={setShowThankyou} /> */}
+        <LastForm setShowThankyou={setShowThankyou} />
       </main>
       <Footer openModal={openModal} />
     </>
