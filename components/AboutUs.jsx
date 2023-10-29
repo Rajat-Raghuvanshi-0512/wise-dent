@@ -59,11 +59,10 @@ const AboutUs = ({ openModal }) => {
       </div>
       <div className="text-xs mt-4 md:hidden">
         <p>
-          At Timmy’s Mowing, we understand that your lawn is more than just
-          grass. it&apos;s a space for relaxation, family playtime,
-          entertainment, and the forging of enduring memories. Our philosophy
-          revolves around delivering the utmost care to every lawn, and
-          that&apos;s precisely what we offer
+          Wisedent takes pride in being Best Dental Clinic in Noida for Braces
+          and Implant. Our team includes the best Endodontist, Periodontist.
+          Prosthodontist and Kid&apos;s Dentist, who follow strict standards to
+          deliver exceptional service and personalised dental care.
         </p>
       </div>
       <Button

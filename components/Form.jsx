@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
-import { Autocomplete } from '@react-google-maps/api';
+import React, { useState } from 'react';
 import { sendMail } from '@/helpers/sendMail';
 
 export const Input = ({ type, placeholder, ...props }) => {
@@ -15,8 +14,8 @@ export const Input = ({ type, placeholder, ...props }) => {
 };
 
 const Form = ({
-  title = 'Professional Lawn Care & Gardening',
-  desc = 'Request A Free Quote Today & Get 10% Discount',
+  title = 'We Create Beautiful Smiles',
+  desc = 'WE OFFER A NUMBER OF GENERAL AND SPECIALIZED DENTISTRY OPTIONS TO SUIT ALL AGES AND NEEDS',
   bgImg,
   btnText = 'get an appointment',
   setShowThankyou,
@@ -28,8 +27,6 @@ const Form = ({
     email: '',
     address: '',
   });
-  const autoCompleteRef = useRef();
-  const inputRef = useRef();
 
   const onChange = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -52,16 +49,6 @@ const Form = ({
     });
     setShowThankyou(true);
   };
-
-  useEffect(() => {
-    autoCompleteRef.current = new window.google.maps.places.Autocomplete(
-      inputRef.current
-    );
-    autoCompleteRef.current.addListener('place_changed', async function () {
-      const place = await autoCompleteRef.current.getPlace();
-      setData((prev) => ({ ...prev, address: inputRef.current.value }));
-    });
-  }, []);
   return (
     <div
       className={`drop-shadow ${
@@ -108,18 +95,15 @@ const Form = ({
             required
           />
         </div>
-        <Autocomplete>
-          <input
-            className="outline-none border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs"
-            type="text"
-            placeholder={'address and pin code'}
-            name="address"
-            onChange={onChange}
-            value={data.address}
-            ref={inputRef}
-            required
-          />
-        </Autocomplete>
+        <input
+          className="outline-none border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs "
+          type="date"
+          placeholder={'address and pin code'}
+          name="Date"
+          // onChange={onChange}
+          // value={data.address}
+          required
+        />
         <button
           type="submit"
           className="uppercase bg-white font-semibold text-xs text-black w-full rounded-xl py-3 mt-5"

@@ -62,17 +62,17 @@ const HeroSm = ({ setShowThankyou }) => {
         } absolute top-0 left-0 -z-10`}
       ></div>
       <h1 className="text-[2.5rem] !leading-tight font-bold mt-3 text-[#FFFADE] uppercase">
-        Professional Lawn Care & Gardening
+        Professional Dental Care clinic
       </h1>
-      <ul className="flex flex-col gap-3  my-10 text-[#FFFADE]">
-        <li className="flex gap-5 items-center">
+      <ul className="flex flex-col gap-3  my-10 uppercase text-[#FFFADE]">
+        <li className="flex gap-5 items-center ">
           <Image
             src={'/checkmark.webp'}
             alt="checkmark"
             width={30}
             height={30}
           />
-          <div>100% SATISFACTION GUARANTEE</div>
+          <div>Award Winning dental Clinic</div>
         </li>
         <li className="flex gap-5 items-center">
           <Image
@@ -81,7 +81,7 @@ const HeroSm = ({ setShowThankyou }) => {
             width={30}
             height={30}
           />
-          <div>NO CALL OUT FEES</div>
+          <div>High Quality Equipment</div>
         </li>
         <li className="flex gap-5 items-center">
           <Image
@@ -90,7 +90,7 @@ const HeroSm = ({ setShowThankyou }) => {
             width={30}
             height={30}
           />
-          <div>SECOND SERVICE FREE</div>
+          <div>15+ years experience</div>
         </li>
       </ul>
       <GetInTouchForm

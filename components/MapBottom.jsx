@@ -17,17 +17,17 @@ const MapForm = ({ setShowThankyou }) => {
           />
         </div>
         <div className="md:flex-[1.3]">
-          <div className="flex flex-col items-end md:mt-20 lg:mt-32 text-right md:p-5 text-sm md:text-2xl lg:text-3xl gap-10 text-white md:text-green-base mt-5">
+          <div className="flex flex-col items-end md:mt-20 lg:mt-32 text-right md:p-5 text-sm md:text-2xl lg:text-3xl gap-10 text-white md:text-green-base mt-5 uppercase">
             <p>
               SMILE BRIGHTER WITH{' '}
               <strong className="block">OUR SERVICES</strong>
             </p>
             <p>
-              NO CALL OUT <strong className="block">FEES</strong>
+              High Quality <strong className="block">Equipment</strong>
             </p>
             <p>
-              100% SATISFACTION <br />{' '}
-              <strong className="block">GUARANTEE</strong>
+              15+ years of
+              <br /> <strong className="block">experience</strong>
             </p>
           </div>
         </div>

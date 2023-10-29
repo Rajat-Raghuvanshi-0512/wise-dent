@@ -70,7 +70,7 @@ const NavModal = forwardRef(({ isOpen, setIsOpen, openModal }, ref) => {
             <div>
               <p className="text-xs">Call us today !</p>
               <p className="text-base font-semibold">
-                <a href="tel:1800 975 432">1800 975 432</a>
+                <a href="tel:8595731667">8595731667</a>
               </p>
             </div>
           </div>
@@ -163,7 +163,7 @@ const Navbar = ({ openModal }) => {
             unoptimized
           />
           <div className="text-xs text-white">
-            <a href="tel:1800 975 432">CALL US</a>
+            <a href="tel:8595731667">CALL US</a>
           </div>
         </div>
         {isScrolled ? (
@@ -218,7 +218,7 @@ const Navbar = ({ openModal }) => {
         <div className="text-green-base">
           <p className="text-xs">Call us today !</p>
           <p className="md:text-lg font-semibold">
-            <a href="tel:1800 975 432">1800 975 432</a>
+            <a href="tel:8595731667">8595731667</a>
           </p>
         </div>
       </div>

@@ -63,8 +63,8 @@ const PricePage = ({ openModal }) => {
           </div>
         </div>
         <div className="flex flex-[1] mt-10 flex-col mx-3">
-          <h4 className="md:text-center lg:-ml-10 text-green-base font-bold text-2xl lg:text-3xl">
-            Get things done the right way.
+          <h4 className="md:text-center capitalize text-green-base font-bold text-2xl lg:text-3xl">
+            Reason to choose us
           </h4>
           <ul className="text-[#455330] lg:mt-10 font-bold md:font-semibold  md:text-xs lg:text-lg flex flex-col gap-3 mt-5 lg:gap-5 lg:font-bold md:ml-10">
             <li className="flex items-center gap-3">
@@ -85,7 +85,7 @@ const PricePage = ({ openModal }) => {
                 height={30}
                 className="md:w-[20px] lg:w-[30px]"
               />
-              First-Class Service
+              15+Years of unparalleled service
             </li>
             <li className="flex items-center gap-3">
               <Image
@@ -95,12 +95,12 @@ const PricePage = ({ openModal }) => {
                 height={30}
                 className="md:w-[20px] lg:w-[30px]"
               />
-              Customer Satisfaction Guaranteed
+              5000+ Happy Clients
             </li>
           </ul>
           <p className="md:hidden p-2 mt-4 text-green-base font-semibold leading-4">
-            We understand each participants needs are different and will work
-            with you to provide the gardening you require.
+            We Understand Every Smile Is Unique, and We&apos;re Here to Tailor
+            Your Dental Care to Your Needs.
           </p>
           <Button
             className="w-full py-3 md:w-72 lg:w-80 !md:px-6 lg:!px-10 ml-auto"

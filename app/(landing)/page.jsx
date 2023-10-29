@@ -16,7 +16,6 @@ import Reviews from '@/components/Reviews';
 import ThankYouModal from '@/components/ThankYouModal';
 import { useModal } from '@/helpers/custom-hooks';
 import { sendMail } from '@/helpers/sendMail';
-import { useJsApiLoader, Autocomplete } from '@react-google-maps/api';
 import { useState } from 'react';
 
 const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
@@ -83,16 +82,14 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
               value={data.email}
             />
           </div>
-          <Autocomplete>
-            <Input
-              type="text"
-              name="address"
-              placeholder={'address and pin code'}
-              required
-              onChange={onChange}
-              value={data.address}
-            />
-          </Autocomplete>
+          <Input
+            type="text"
+            name="address"
+            placeholder={'address and pin code'}
+            required
+            onChange={onChange}
+            value={data.address}
+          />
           <button
             className="uppercase bg-white font-semibold text-xs w-full rounded-xl py-3 mt-5 text-green-base"
             type="submit"
@@ -111,14 +108,6 @@ const Home = () => {
   const { isOpen, closeModal, openModal } = useModal();
 
   const [showThankyou, setShowThankyou] = useState(false);
-
-  const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,
-    libraries,
-  });
-  if (!isLoaded) {
-    return;
-  }
   return (
     <>
       <ThankYouModal

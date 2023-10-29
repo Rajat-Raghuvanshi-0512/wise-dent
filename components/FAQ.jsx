@@ -4,30 +4,31 @@ import Heading from './custom/Heading';
 import Button from './custom/Button';
 import { useState } from 'react';
 
-const GeneralFaqData = [
+const ImplantFaqData = [
   {
-    heading: 'What does your gardening service include?',
-    body: 'Our gardening service covers a wide range of tasks, including lawn mowing, Clean up, planting, fertilizing, and landscape design. We customize our services to meet your specific needs and preferences.',
+    heading: 'How long does the dental implant procedure take?',
+    body: 'The dental implant procedure can take several months to complete, including the initial consultation, implant placement surgery, osseointegration, and the placement of the permanent restoration. Typically, the implant placement surgery itself takes around 1-2 hours per implant.',
   },
   {
-    heading: 'How often should I have my garden serviced?',
-    body: 'This will depend on a number of factors, including the size of your garden and how much time you have to devote to it yourself. If you have a large garden, it’s probably best to have it serviced on a weekly basis. For smaller gardens, fortnightly or monthly services may be sufficient.',
+    heading: 'Does getting a dental implant hurt?',
+    body: 'During a dental implant procedure, the patient is given local anesthesia to numb the area around the implant site, so there should not be any pain during the procedure.',
   },
   {
-    heading: 'How can I get a quote for your lawn mowing services?',
-    body: "Getting a quote is simple! You can reach out to us via phone or our website's contact form. We'll gather the necessary information about your lawn size and requirements to provide you with an accurate estimate.",
+    heading: 'How much do dental implants cost?',
+    body: 'The cost of dental implants can vary depending on several factors, including the number of implants needed, the type of implant used, and any additional procedures that may be required (such as bone grafting or tooth extraction). The exact cost is only after a proper assessment by a specialist.',
   },
   {
-    heading: 'Do I need to be present during the service?',
-    body: "You don't have to be present during the service if you have provided us with access to your lawn or garden. However, if you prefer to be present, we welcome your supervision and any specific instructions you might have.",
+    heading:
+      'What are the advantages of dental implants over other tooth replacement options?',
+    body: ' 1. Durability: Dental implants are designed to be a permanent tooth replacement solution and can last for many years with proper care and maintenance.<br> 2. Natural look and feel: Because dental implants are designed to look and function like natural teeth, they can provide a more natural-looking and feeling tooth replacement option compared to other alternatives like dentures or bridges.<br> 3. Improved oral health: Dental implants do not require any additional maintenance or special care, and they do not put any extra stress on surrounding teeth or gum tissue. This can help improve overall oral health and reduce the risk of future dental problems.<br>',
   },
   {
-    heading: 'Can you accommodate special requests for lawn mowing patterns?',
-    body: "Absolutely! We can create intricate mowing patterns upon request, adding a touch of artistic flair to your lawn. Just let us know your preferences, and we'll be happy to oblige.",
+    heading: 'How long do dental implants last?',
+    body: "With proper care and maintenance, dental implants can last for many years, even a lifetime. The longevity of dental implants largely depends on factors such as the patient's oral hygiene habits, the quality of the implant placement and restoration, and overall oral health.",
   },
 ];
 
-const ServiceFaqData = [
+const RCTFaqData = [
   {
     heading:
       'Will you remove garden waste after completing my garden care services?',
@@ -77,8 +78,8 @@ const PricingFaqData = [
 ];
 
 const FAQ = ({ openModal }) => {
-  const [selected, setSelected] = useState('General');
-  const [FaqData, setFaqData] = useState(GeneralFaqData);
+  const [selected, setSelected] = useState('Implant');
+  const [FaqData, setFaqData] = useState(ImplantFaqData);
   const [active, setActive] = useState(0);
   return (
     <section className=" md:px-14" id="faq">
@@ -90,33 +91,33 @@ const FAQ = ({ openModal }) => {
           <button
             className={`
               ${
-                selected === 'General' &&
+                selected === 'Implant' &&
                 'bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-transparent'
               }
                 px-3 rounded-lg text-sm py-1 w-28 h-8 md:w-auto md:h-auto border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
             `}
             onClick={() => {
-              setSelected('General');
-              setFaqData(GeneralFaqData);
+              setSelected('Implant');
+              setFaqData(ImplantFaqData);
             }}
           >
-            General
+            Implant
           </button>
           <div className="w-full h-[2px] bg-green-base hidden md:block" />
           <button
             className={`
            ${
-             selected === 'Service' &&
+             selected === 'RCT' &&
              'bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
            }
              px-1 rounded-lg text-sm py-1 w-28 h-8 md:w-auto md:h-auto border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
          `}
             onClick={() => {
-              setSelected('Service');
-              setFaqData(ServiceFaqData);
+              setSelected('RCT');
+              setFaqData(RCTFaqData);
             }}
           >
-            After Service
+            RCT
           </button>
 
           <div className="w-full h-[2px] bg-green-base hidden md:block" />

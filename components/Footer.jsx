@@ -38,7 +38,7 @@ const FooterSm = () => {
               className="w-[20px] h-[20px] object-contain"
             />
           </Link>
-          <a href="tel:1800 975 432">
+          <a href="tel:8595731667">
             <Image
               src={'/call-icon.webp'}
               alt="socials"
@@ -60,7 +60,7 @@ const FooterSm = () => {
         <div>
           <p>wisedent1@gmail.com</p>
           <p>
-            <a href="tel:1800 975 432">1800 975 432</a>
+            <a href="tel:8595731667">8595731667</a>
           </p>
         </div>
       </div>
@@ -119,7 +119,7 @@ const FooterLg = ({ openModal }) => {
         </p>
         <p className="uppercase text-xs">Let&apos;s Team Up!</p>
         <div className="flex lg:flex-row flex-col gap-4 lg:gap-10 text-sm">
-          <div>wisedent1@gmail.com</div> <div>1800 975 432</div>
+          <div>wisedent1@gmail.com</div> <div>8595731667</div>
         </div>
       </div>
       <div className="flex flex-col justify-end py-5">

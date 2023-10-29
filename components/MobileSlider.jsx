@@ -10,12 +10,12 @@ const firstSlide = [
 ];
 
 const secondSlide = [
-  'NO CALL OUT FEES',
-  'NO CALL OUT FEES',
-  'NO CALL OUT FEES',
-  'NO CALL OUT FEES',
-  'NO CALL OUT FEES',
-  'NO CALL OUT FEES',
+  'High Quality Equipment',
+  'High Quality Equipment',
+  'High Quality Equipment',
+  'High Quality Equipment',
+  'High Quality Equipment',
+  'High Quality Equipment',
 ];
 
 const thirdSlide = [

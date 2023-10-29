@@ -1,10 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Button from './custom/Button';
-import { Autocomplete } from '@react-google-maps/api';
 import { sendMail } from '@/helpers/sendMail';
 
 const GetInTouchForm = ({ setShowThankyou, setIncreaseSize = () => {} }) => {
-  const autoCompleteRef = useRef();
   const [data, setData] = useState({
     name: '',
     address: '',
@@ -28,17 +26,6 @@ const GetInTouchForm = ({ setShowThankyou, setIncreaseSize = () => {} }) => {
     setShowThankyou(true);
     setData((prev) => ({ ...prev, name: '', address: '', phone: '' }));
   };
-  useEffect(() => {
-    autoCompleteRef.current = new window.google.maps.places.Autocomplete(
-      inputRef.current
-    );
-    autoCompleteRef.current.addListener('place_changed', async function () {
-      const place = await autoCompleteRef.current.getPlace();
-      setData((prev) => ({ ...prev, address: inputRef.current.value }));
-      setShowInputs(true);
-      setIncreaseSize(true);
-    });
-  }, [setIncreaseSize]);
 
   return (
     <div className="bg-white rounded-lg p-3">
@@ -48,18 +35,16 @@ const GetInTouchForm = ({ setShowThankyou, setIncreaseSize = () => {} }) => {
         Gardening Services.
       </p>
       <form onSubmit={handleSubmit}>
-        <Autocomplete>
-          <input
-            type="text"
-            placeholder="address and pincode"
-            ref={inputRef}
-            onChange={onChange}
-            value={data.address}
-            required
-            name="address"
-            className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
-          />
-        </Autocomplete>
+        <input
+          type="text"
+          placeholder="address and pincode"
+          ref={inputRef}
+          onChange={onChange}
+          value={data.address}
+          required
+          name="address"
+          className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
+        />
         {showInputs && (
           <>
             <input
