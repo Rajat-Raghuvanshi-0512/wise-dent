@@ -107,7 +107,7 @@ const ImageGallery = () => {
       </div>
       <div className="bg-[#EFF0F2] md:hidden rounded-lg px-4 py-7">
         <h3 className="text-2xl font-semibold mb-3 text-green-base">
-          Residential Services
+          Dental Services
         </h3>
         <div className="h-[1px] w-full bg-gray-500" />
         {galleryInfoSm.map((item, id) => (

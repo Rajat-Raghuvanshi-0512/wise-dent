@@ -87,37 +87,37 @@ export const reviews = [
   {
     id: 1,
     imageUrl: '/reviews/review1.webp',
-    name: 'Lachlan Mitchell',
+    name: 'Kshitij Gupta',
     type: 'Reservoir',
-    desc: 'Extremely professionally run Company. Team Timmy called me in the morning to confirm timings and further in the afternoon when he had been delayed. Extremely customer centric.',
+    desc: 'Few months back I got my treatment done in wisedent dental clinic by clear alligners. I am fully satisfied by the treatment. Dr Vineet is a thorough gentleman and a very learned Orthodontist. Treatment was completed on time. Appointments were taken regularly with out long waiting periods. All thanks to Dr Vineet. My good wishes to him for the future.',
   },
   {
     id: 2,
     imageUrl: '/reviews/review2.webp',
-    name: 'Amelia Davies',
+    name: 'Sidhant Taneja',
     type: 'Heidelberg heights',
-    desc: "Timmy Mowing has been taking care of my lawn for almost a year and I'm genuinely pleased with their professional and friendly service. Everything has been excellent so far. It's truly refreshing to work with a company that provides such exceptional service.",
+    desc: 'I came to this clinic for ortho treatment as my teeth are not in proper arrangement and on examination I got to know that I have to get a RCT also. Dr Vineet did a painless treatment for my decayed teeth and then started my ortho treatment. Till now I am very satisfied with the ortho treatment. Dr. Vineet is a very experienced and a humble doctor. The clinic is also equipped with all the latest equipments. Very nice experience overall.',
   },
   {
     id: 3,
     imageUrl: '/reviews/review3.webp',
-    name: 'Cameron Foster',
+    name: 'MAHESH D SADHANKAR',
     type: 'Preston',
-    desc: 'We are extremely satisfied with the service Timmy’s Mowing offers us. The operator is consistently punctual and knowledgeable, ensuring our lawn remains in excellent condition after their regular treatments. We wholeheartedly recommend their services without any reservations.',
+    desc: 'A year ago We consulted Dr. Vineet for my son and Doctor examined him and explained issue very well with all details and clarified doubts too. His advise was very appropriate and within 7days it worked. Thanks a lot Dr Vineet, Also, the clinic is very neat, clean maintained and followed all Covid-19 guidelines.',
   },
   {
     id: 4,
     imageUrl: '/reviews/review4.webp',
-    name: 'Matilda Harper',
+    name: 'Nandini Talukdar',
     type: 'Eaglemont',
-    desc: "Timmy’s Mowing consistently providing a friendly, reliable and professional service. I've been their satisfied customer for quite a while now and I wholeheartedly recommend their services",
+    desc: 'Dr Vineet has a very calm and composed demeanor and is extremely professional with his work! Absolutely loved my experience here, everything was very smooth thanks to Dr Vineet! Would 100% recommend to others!',
   },
   {
     id: 5,
     imageUrl: '/reviews/review5.webp',
-    name: 'Finnegan Sullivan',
+    name: 'Meenakshi Nagvanshi',
     type: 'Kew',
-    desc: "Timmy’s Mowing team did an exceptional job and the entire process from start to finish was incredibly smooth. I'm highly impressed with the team's expertise and knowledge and we're thrilled with the final outcome. Thank you!",
+    desc: 'Visited this clinic for my husband s treatment. I truly appreciate the quality of work which i got. Dr is very efficient n generous n gives answers to all the queries. This is the best clinic for the solution of all the dental problems.',
   },
 ];
 
@@ -164,54 +164,46 @@ export const pricePageData = {
 
 export const galleryInfoSm = [
   {
-    heading: 'Lawn Care',
+    heading: 'Implant',
+    list: ['Single tooth implant', 'All-on-4 implant', 'All-on-6 implant'],
+  },
+  {
+    heading: 'RCT',
     list: [
-      'Mowing',
-      'Edging',
-      'Fertilization',
-      'Topiary Services',
-      'Mulching Services',
-      'Aeration',
-      'Lawn',
-      'Detaching',
-      'Slashing',
+      'Single setting root canal treatment',
+      'Preservation of natural tooth',
+      'Multi setting root canal treatment',
     ],
   },
   {
-    heading: 'Garden Design',
-    list: ['Custom Design', 'Theme gardens', 'Landscaping'],
-  },
-  {
-    heading: 'Weed Control',
-    list: ['Weeding', 'Herbicide', 'Application'],
-  },
-  {
-    heading: 'Planting, Grassing & Bedding',
-    list: ['Flower Bed Design', 'Plant Installation'],
-  },
-  {
-    heading: 'Seasonal Cleanup',
-    list: ['Fall Clean up', 'Spring Clean up'],
-  },
-  {
-    heading: 'Hedge & Tree Care',
+    heading: 'Braces',
     list: [
-      'Prunning and Trimming',
-      'Tree Lopping',
-      'Stump removal',
-      'Topiary Services',
+      'Metal braces',
+      'Ceramic braces',
+      'Lingual braces',
+      'Aligners',
+      'Self lingating braces',
     ],
   },
   {
-    heading: 'Consultstion & Maintainance',
-    list: ['Site Evaluation'],
+    heading: 'Crowns and Bridges',
+    list: [],
   },
   {
-    heading: 'Pest Management',
-    list: ['Identification', 'Treatment'],
+    heading: 'Cosmetic Treatment',
+    list: [
+      'Teeth bleaching / Whitening',
+      'Venners',
+      'Smile Designing',
+      'Gum Depigmentation',
+    ],
   },
   {
-    heading: 'Waste Removal Services',
-    list: ['Green waste removal', 'Other waste removal', 'Leaf blowing'],
+    heading: 'Pediatric treatment',
+    list: ['Pit and fissure sealants', 'Fluoride', 'Orthodontic treatment'],
+  },
+  {
+    heading: 'Periodontal Treatment',
+    list: [],
   },
 ];

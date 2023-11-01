@@ -8,7 +8,13 @@ const ReviewCard = ({ imageUrl, name, type, desc }) => {
   return (
     <div className="border border-green-base min-w-[280px] md:min-w-[320px] p-5 rounded-2xl flex-1">
       <div className="flex gap-3 p-1 !w-full">
-        <Image src={imageUrl} alt="review" width={50} height={50} />
+        <Image
+          src={imageUrl}
+          alt="review"
+          width={50}
+          height={50}
+          className="rounded-full object-contain w-[50px] h-[50px]"
+        />
         <div>
           <h6 className="font-bold uppercase">{name}</h6>
           <p className="text-xs capitalize">{type}</p>
@@ -20,10 +26,6 @@ const ReviewCard = ({ imageUrl, name, type, desc }) => {
       <p className="md:hidden text-lg md:text-sm md:font-normal py-2">
         {desc.slice(0, 160)}
       </p>
-      <div className="flex w-full">
-        <Image src={'/icons/facebook.svg'} alt="fb" width={20} height={20} />
-        <Image src={'/icons/linkedin.svg'} alt="fb" width={20} height={20} />
-      </div>
     </div>
   );
 };
