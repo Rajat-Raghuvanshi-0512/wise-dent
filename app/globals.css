@@ -101,7 +101,7 @@ input[type='number'] {
 }
 
 .animate-infinite {
-  width: 900vw;
+  width: 950vw;
 }
 @keyframes rotateInfinite {
   0% {
@@ -125,7 +125,7 @@ input[type='number'] {
 }
 
 .animate-infinite-2 {
-  width: 940vw;
+  width: 1000vw;
 }
 @keyframes rotateInfinite2 {
   0% {

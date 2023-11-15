@@ -59,8 +59,10 @@ const MobileSlider = () => {
             ref={firstSlideRef}
           >
             {firstSlide.map((item, idx) => (
-              <div className="flex w-[150vw]" key={item + idx}>
-                <span className={` text-5xl md:text-7xl px-5`}>{item}</span>
+              <div className="flex" key={item + idx}>
+                <span className={`w-[150vw] text-5xl md:text-7xl px-5`}>
+                  {item}
+                </span>
               </div>
             ))}
           </div>
@@ -71,8 +73,12 @@ const MobileSlider = () => {
             ref={secondSlideRef}
           >
             {secondSlide.map((item, idx) => (
-              <div className="w-[120vw]" key={item + idx}>
-                <span className={`text-5xl md:text-7xl px-5`}>{item}</span>
+              <div className="w-[180vw]" key={item + idx}>
+                <span
+                  className={`text-5xl !w-[180vw] md:text-7xl px-5 uppercase`}
+                >
+                  {item}
+                </span>
               </div>
             ))}
           </div>
@@ -83,7 +89,7 @@ const MobileSlider = () => {
             ref={thirdSlideRef}
           >
             {thirdSlide.map((item, idx) => (
-              <div className="flex w-[210vw]" key={item + idx}>
+              <div className="flex w-[200vw]" key={item + idx}>
                 <span className={`text-5xl md:text-7xl `}>{item}</span>
               </div>
             ))}
