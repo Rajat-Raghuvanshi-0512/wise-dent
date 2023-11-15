@@ -25,7 +25,7 @@ const ThankYouModal = ({ showThankyou = false, setShowThankyou }) => {
           <div className="p-5 text-3xl md:text-4xl lg:text-5xl uppercase text-white font-bold">
             <h2 className="font-futura p-4">WiseDent</h2>
           </div>
-          <div className="flex px-10 py-4 md:pb-14 text-white text-lg md:text-xl w-[85%] flex-col  bg-[#2b4c14]">
+          <div className="flex px-10 py-4 md:pb-14 text-white text-lg md:text-xl w-[85%] flex-col">
             <h3>Thank you for choosing WiseDent for your dental care.</h3>
             <h3 className="my-16 md:my-10">
               Your form has been successfully submitted.
