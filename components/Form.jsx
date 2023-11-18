@@ -98,7 +98,6 @@ const Form = ({
         <input
           className="outline-none border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs "
           type="date"
-          placeholder={'address and pin code'}
           name="Date"
           // onChange={onChange}
           // value={data.address}

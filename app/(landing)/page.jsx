@@ -23,7 +23,6 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
     name: '',
     phone: '',
     email: '',
-    address: '',
   });
 
   const onChange = (e) => {
@@ -36,7 +35,6 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
       from_name: data.name,
       from_number: data.phone,
       from_email: data.email,
-      from_address: data.address,
       from_reason: 'Request for free quote',
     });
     closeModal();
@@ -44,7 +42,6 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
       name: '',
       phone: '',
       email: '',
-      address: '',
     });
     setShowThankyou(true);
   };
@@ -55,7 +52,7 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
           WE OFFER A NUMBER OF GENERAL AND SPECIALIZED DENTISTRY OPTIONS TO SUIT
           ALL AGES AND NEEDS
         </div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <Input
             type="text"
             name="name"
@@ -64,31 +61,21 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
             value={data.name}
             required
           />
-          <div className="flex gap-2 my-4">
-            <Input
-              type="number"
-              name="phone"
-              placeholder={'phone number'}
-              required
-              onChange={onChange}
-              value={data.phone}
-            />
-            <Input
-              type="email"
-              name="email"
-              placeholder={'email address'}
-              required
-              onChange={onChange}
-              value={data.email}
-            />
-          </div>
           <Input
-            type="text"
-            name="address"
-            placeholder={'address and pin code'}
+            type="number"
+            name="phone"
+            placeholder={'phone number'}
             required
             onChange={onChange}
-            value={data.address}
+            value={data.phone}
+          />
+          <Input
+            type="email"
+            name="email"
+            placeholder={'email address'}
+            required
+            onChange={onChange}
+            value={data.email}
           />
           <button
             className="uppercase bg-white font-semibold text-xs w-full rounded-xl py-3 mt-5 text-green-base"
@@ -101,8 +88,6 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
     </Modal>
   );
 };
-
-const libraries = ['places'];
 
 const Home = () => {
   const { isOpen, closeModal, openModal } = useModal();
