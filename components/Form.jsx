@@ -39,7 +39,7 @@ const Form = ({
       from_number: data.phone,
       from_email: data.email,
       from_address: data.address,
-      from_reason: 'Request for free quote',
+      from_reason: 'Request for appointment',
     });
     setData({
       name: '',
@@ -96,7 +96,7 @@ const Form = ({
           />
         </div>
         <input
-          className="outline-none border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs "
+          className="outline-none border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs"
           type="date"
           name="Date"
           // onChange={onChange}

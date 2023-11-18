@@ -35,7 +35,7 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
       from_name: data.name,
       from_number: data.phone,
       from_email: data.email,
-      from_reason: 'Request for free quote',
+      from_reason: 'Request for appointment',
     });
     closeModal();
     setData({
